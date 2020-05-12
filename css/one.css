@@ -1,0 +1,357 @@
+body{ 
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Cairo', sans-serif;
+}
+.head-border-center::after{
+  content: '';
+  display: inline-block;
+  background-color: #3AADE6;
+  width: 4px;
+  height: 42px;
+  margin: -7px 10px;
+}
+/* start Navbar*/
+.navbar{
+background-color: #F8F9FA;
+}
+.bg-dark {
+background-color: #F8F9FA!important;
+}
+.navbar-toggler i{
+color: #3AADE6;
+border: transparent;
+
+}
+.navbar-toggler i:focus, .navbar-toggler:hover {
+text-decoration: none;
+}
+.navbar-light .navbar-toggler {
+border: none;
+}
+button:focus {
+outline: 1px dotted;
+outline: none;
+}
+nav .navbar-brand img{
+width: 152px;
+}
+nav .pagination{
+display: inline-flex;
+margin: 25px auto;
+}
+/* End Navbar*/
+
+/* start OUR WORK*/
+.h2{
+  font-size: 39px;
+ float: right;
+ padding: 20px 0;
+}
+.one {
+  padding: 60px 0;
+}
+.one img{
+  text-align: center;
+  width: 550px;
+  margin-top: 20px;
+  background-size: cover;
+}
+/* end OUR WORK*/
+/* start details*/
+.h2-details{
+  float: right;
+}
+.details{
+  background: url('../images/details-bg.png');
+  margin-top: 50px;
+}
+.details p{
+  font-size: 30px;
+  padding: 30px 0;
+  color: #fff;
+  text-align: center;
+}
+/* end details*/
+/* start lfa*/
+.lfa{
+  padding: 40px 0;
+  position: relative;
+  height: 700px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.icons{
+  text-align: center;
+  margin: 50px 0 -41px 181px;
+  z-index: 9999;
+  padding-bottom: 60px;
+}
+.icons div {
+  background: #333;
+  border-radius: 20px;
+  padding: 10px 16px;
+  display: inline-block;
+  width: 48px;
+  height: 34px;
+  cursor: pointer;
+}
+.icons i{
+  color: #fff;
+  margin: -5px;
+  font-size: 25px;
+ 
+}
+/* start primary CSS/CSS3*/
+.card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-carousel .my-card {
+  height: 20rem;
+  width: 12rem;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: scale(0.6) translateY(-2rem);
+  transform: scale(0.6) translateY(-2rem);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  background: #2e5266;
+  background: linear-gradient(to top, #2e5266, #6e8898);
+  transition: 1s;
+}
+
+.card-carousel .my-card:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.3);
+  bottom: -5rem;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.card-carousel .my-card.active {
+  z-index: 3;
+  -webkit-transform: scale(1) translateY(0) translateX(0);
+  transform: scale(1) translateY(0) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.card-carousel .my-card.prev, .card-carousel .my-card.next {
+  z-index: 2;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+  transform: scale(0.8) translateY(-1rem) translateX(0);
+  opacity: 0.6;
+  pointer-events: auto;
+  transition: 1s;
+}
+/* end primary CSS/CSS3*/
+
+.card-carousel .my-card:nth-child(0):before {
+  content: '0';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(1):before {
+  content: '1';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(2):before {
+  content: '2';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(3):before {
+  content: '3';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(4):before {
+  content: '4';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+.card-carousel .my-card{
+    background: none;
+}
+.card-carousel {
+  margin: -6px auto;
+  top: 0;
+  left: 296px;
+  position: absolute;
+}
+/* end lfa*/
+
+/* start footer*/
+footer{
+  padding: 40px 0;
+  background: url('../images/footer.jpg') no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position:bottom;
+}
+footer .info{
+  float: right;
+  color: #fff;
+  padding: 45px 0px;
+}
+footer .info img{
+  padding-bottom: 20px;
+  width: 230px;
+}
+footer .info p{
+  font-size: 20px;
+}
+footer .info  .items{
+  font-size: 30px;
+  margin-left: 16px;
+}
+footer .info  .items i{
+  margin-left: 20px;
+  cursor: pointer;
+}
+footer .info  .items .face:hover{
+  color: #2b43ff;
+}
+footer .info  .items .twi:hover{
+  color: #1e4ba0;
+}
+footer .info  .items .what:hover{
+  color: #28a745;
+}
+footer .info  .items .git:hover{
+color: #b01f6a;
+}
+footer .footer-img{
+width: 200px;
+float: right;
+}
+/* end footer*/
+
+nav .pagination{
+  display: inline-flex;
+  margin: 25px auto;
+}
+
+/* start media */
+@media (max-width: 600px) {
+  .one img {
+    text-align: center;
+    width: 310px;
+    margin: 24px auto;
+    background-size: cover;
+}
+.h2 {
+  font-size: 20px;
+  float: right;
+  padding: 20px 0;
+}
+.head-border-center::after {
+  height: 23px;
+}
+.h2-details {
+  float: right;
+  font-size: 19px;
+}
+.details p {
+  font-size: 19px;
+  padding: 30px 0;
+  color: #fff;
+  text-align: center;
+}
+.icons {
+  margin: 50px auto 0;
+}
+.lfa {
+  height: 250px;
+}
+.card-carousel {
+  left: 2px;
+}
+.card-carousel .my-card {
+  width: 5rem;
+}
+.card-carousel {
+  margin: -26px auto;
+}
+.my-card img {
+  width: 150px;
+}
+  footer .footer-img {
+      width: 125px;
+      text-align: center;
+      overflow: hidden;
+      margin: 1px 80px;
+  }
+  footer {
+      margin: -15px auto;
+  }
+  footer .info .items {
+      font-size: 22px;
+      margin-left: -11px;
+  }
+  footer .info {
+      float: right;
+      color: #fff;
+      padding: 10px 0px;
+  }
+
+
+
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .h2 {
+    font-size: 29px;
+}
+.details p {
+    font-size: 23px;
+}
+.card-carousel {
+     left: 0; 
+}
+}
+/* end media */
